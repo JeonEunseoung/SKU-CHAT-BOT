@@ -1,5 +1,6 @@
 package com.example.skuchatbot.Notice;
 
+
 import lombok.Data;
 
 //공지사항 테이블
