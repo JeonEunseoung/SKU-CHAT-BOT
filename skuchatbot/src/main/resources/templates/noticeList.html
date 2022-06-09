@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:c="https://code.jquery.com/jquery-latest.min.js">
+<html xmlns:c="http://code.jquery.com/jquery-latest.js" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="layout/header::header"></div>
   <table row="1">
     <tr>
       <th>NOTICE_ID</th>
@@ -8,14 +8,22 @@
       <th>NAME</th>
       <th>addr</th>
     </tr>
+      <!--
  <c:forEach items="${list}" var="data">
      <tr>
-       <td>${data.NOTICE_ID}</td>
+       <td><span c:out value="${data.H_ID}"></span></td>
        <td>${data.H_ID}</td>
        <td>${data.NAME}</td>
        <td>${data.addr}</td>
      </tr>
  </c:forEach>
+ -->
+      <tr th:each="data : ${list}" >
+          <td th:text="${data.NOTICE_ID}"></td>
+          <td th:text="${data.H_ID}"></td>
+          <td th:text="${data.NAME}"></td>
+          <td th:text="${data.addr}"></td>
+      </tr>
   </table>
 
 

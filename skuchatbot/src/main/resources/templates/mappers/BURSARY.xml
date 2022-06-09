@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.skuchatbot.BURSARY.BursaryDAO">
+    <!-- select 쿼리 (1개) -->
+    <select id="BursaryCheck" parameterType="com.example.skuchatbot.BURSARY.BursaryDTO" resultType="com.example.skuchatbot.BURSARY.BursaryDTO">
+        select * from BURSARY
+    </select>
+
+
+</mapper>

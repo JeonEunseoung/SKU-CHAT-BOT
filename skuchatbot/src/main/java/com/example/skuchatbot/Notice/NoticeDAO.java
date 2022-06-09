@@ -1,4 +1,4 @@
-package com.example.skuchatbot.Controller;
+package com.example.skuchatbot.Notice;
 
 import org.apache.ibatis.annotations.Mapper;
 import com.example.skuchatbot.Notice.NoticeDTO;

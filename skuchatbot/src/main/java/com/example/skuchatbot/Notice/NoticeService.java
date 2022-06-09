@@ -1,6 +1,5 @@
 package com.example.skuchatbot.Notice;
 
-import com.example.skuchatbot.Controller.NoticeDAO;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
@@ -11,8 +10,11 @@ import java.util.List;
 
 @Service
 public class NoticeService {
+
+
     final
     NoticeDAO noticeDAO;
+
 
     public NoticeService(NoticeDAO noticeDAO) {
         this.noticeDAO = noticeDAO;
@@ -25,6 +27,7 @@ public class NoticeService {
         try{
             list = noticeDAO.AddrCheck(noticeDTO);
             model.addAttribute("list", list);
+            System.out.println(list);
         }catch (SQLException e){
             e.printStackTrace();
         }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:c="http://code.jquery.com/jquery-latest.js" xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script th:src="@{/css/motion.js}"></script>
+<div th:replace="layout/header::header"></div>
+</head>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>MENU_ID</th>
+        <th>NAME</th>
+        <th>msg</th>
+    </tr>
+    <tr th:each="data : ${list}" >
+        <td th:text="${data.MENU_ID}"></td>
+        <td th:text="${data.NAME}"></td>
+        <td th:text="${data.msg}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>NOTICE_ID</th>
+        <th>H_ID</th>
+        <th>NAME</th>
+        <th>addr</th>
+    </tr>
+    <tr th:each="data2 : ${list2}" >
+        <td th:text="${data2.NOTICE_ID}"></td>
+        <td th:text="${data2.H_ID}"></td>
+        <td th:text="${data2.NAME}"></td>
+        <td th:text="${data2.addr}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>SCHEDULE_ID</th>
+        <th>H_ID</th>
+        <th>img_addr</th>
+    </tr>
+    <tr th:each="data3 : ${list3}" >
+        <td th:text="${data3.SCHEDULE_ID}"></td>
+        <td th:text="${data3.H_ID}"></td>
+        <td th:text="${data3.img_addr}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>BURSARY_ID</th>
+        <th>H_ID</th>
+        <th>NAME</th>
+        <th>msg</th>
+    </tr>
+    <tr th:each="data4 : ${list4}" >
+        <td th:text="${data4.BURSARY_ID}"></td>
+        <td th:text="${data4.H_ID}"></td>
+        <td th:text="${data4.NAME}"></td>
+        <td th:text="${data4.msg}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>PHONE_ID</th>
+        <th>H_ID</th>
+        <th>addr</th>
+    </tr>
+    <tr th:each="data5 : ${list5}" >
+        <td th:text="${data5.PHONE_ID}"></td>
+        <td th:text="${data5.H_ID}"></td>
+        <td th:text="${data5.addr}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>MARK_ID</th>
+        <th>H_ID</th>
+        <th>msg</th>
+    </tr>
+    <tr th:each="data6 : ${list6}" >
+        <td th:text="${data6.MARK_ID}"></td>
+        <td th:text="${data6.H_ID}"></td>
+        <td th:text="${data6.msg}"></td>
+    </tr>
+</table>
+<br>
+<img src="../../img/skon.png" alt="skon" width="50" height="50"><br>
+<table class="speech-bubble" row="2">
+    <tr>
+        <th>LMS_ID</th>
+        <th>H_ID</th>
+        <th>addr</th>
+    </tr>
+    <tr th:each="data7 : ${list7}" >
+        <td th:text="${data7.LMS_ID}"></td>
+        <td th:text="${data7.H_ID}"></td>
+        <td th:text="${data7.addr}"></td>
+    </tr>
+</table>
+</html>

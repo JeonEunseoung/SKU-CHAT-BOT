@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.skuchatbot.PHONE.PhoneDAO">
+    <!-- select 쿼리 (1개) -->
+    <select id="PhoneCheck" parameterType="com.example.skuchatbot.PHONE.PhoneDTO" resultType="com.example.skuchatbot.PHONE.PhoneDTO">
+        select * from PHONE
+    </select>
+
+
+</mapper>
